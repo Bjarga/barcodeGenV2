@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+    <title>Barcode_Generator</title>
+  </head>
+  <body>
+    <section class="generate">
+      <div class="input-group input-group-lg mb-3 butDiv">
+        <input
+          type="text"
+          id="userNum"
+          class="form-control"
+          placeholder="Barcode Number"
+          aria-label="Barcode Number"
+          aria-describedby="button-addon2"
+        />
+        <button class="btn btn-secondary" type="button" id="check">
+          Generate
+        </button>
+      </div>
+
+      <p class="barnumber"></p>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col"></div>
+        <div class="bar-canvas col">
+          <canvas id="mainCanvas" width="850" height="580"> </canvas>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+
+    <div class="download-canvas">
+      <button type="button" class="btn btn-secondary downloadbtn">
+        Download
+      </button>
+    </div>
+
+    <script src="chalenge.js"></script>
+  </body>
+</html>
