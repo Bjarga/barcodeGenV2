@@ -3,6 +3,13 @@ body {
   height: 1000px;
 }
 
+H2 {
+  text-align: center;
+  color: white;
+  background-color: #6c757d;
+  padding: 20px 0 20px;
+}
+
 .generate {
   display: flex;
   flex-direction: column;
@@ -59,6 +66,7 @@ body {
 }
 
 .butDiv {
+  margin-top: 100px;
   padding: 20px 50px 0px 50px;
 }
 
